@@ -1,26 +1,234 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sleek-ui-adorno</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weapon Skin Selector</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="game-container">
+    <div class="top-header">
+      <div class="logo">
+        <div class="logo-icon">HF</div>
+        <div class="title">
+          <h1>CHANGE SKINS</h1>
+          <p>Change weapon skins</p>
+        </div>
+      </div>
+      
+      <div class="weapon-select">
+        <div class="weapon-select-text">
+          <p>WEAPON SELECT</p>
+          <p>POOLCUEX</p>
+        </div>
+        <div class="weapon-icon">
+          <div class="weapon-icon-bg"></div>
+        </div>
+      </div>
+      
+      <div class="account-icon">A</div>
+    </div>
+    
+    <div class="main-content">
+      <div class="weapons-list">
+        <div class="dropdown-select">
+          <p>ALL Weapons</p>
+          <div class="chevron-down"></div>
+        </div>
+        
+        <div class="weapon-item" data-weapon="REVOLVER">
+          <div class="weapon-item-icon revolver-icon"></div>
+          <div class="weapon-item-details">
+            <p>Weapon Skin</p>
+            <p>REVOLVER MK2</p>
+          </div>
+        </div>
+        
+        <div class="weapon-item active" data-weapon="POOLCUEX">
+          <div class="weapon-item-icon poolcue-icon"></div>
+          <div class="weapon-item-details">
+            <p>Weapon Skin</p>
+            <p>POOLCUEX</p>
+          </div>
+        </div>
+        
+        <div class="weapon-item" data-weapon="POOLCUEX2">
+          <div class="weapon-item-icon poolcue-icon"></div>
+          <div class="weapon-item-details">
+            <p>Weapon Skin</p>
+            <p>POOLCUEX</p>
+          </div>
+        </div>
+        
+        <div class="weapon-item" data-weapon="KNUCKLE">
+          <div class="weapon-item-icon knuckle-icon"></div>
+          <div class="weapon-item-details">
+            <p>Weapon Skin</p>
+            <p>KNUCKLE</p>
+          </div>
+        </div>
+        
+        <div class="weapon-item" data-weapon="DAGGERFX">
+          <div class="weapon-item-icon dagger-icon"></div>
+          <div class="weapon-item-details">
+            <p>Weapon Skin</p>
+            <p>DAGGERFX</p>
+          </div>
+        </div>
+        
+        <div class="weapon-item" data-weapon="KNIFE">
+          <div class="weapon-item-icon knife-icon"></div>
+          <div class="weapon-item-details">
+            <p>Weapon Skin</p>
+            <p>KNIFE</p>
+          </div>
+        </div>
+        
+        <div class="empty-slot">Empty</div>
+        <div class="empty-slot">Empty</div>
+        <div class="empty-slot">Empty</div>
+        <div class="empty-slot">Empty</div>
+        <div class="empty-slot">Empty</div>
+        <div class="empty-slot">Empty</div>
+      </div>
+      
+      <div class="weapon-display">
+        <div class="weapon-image-container">
+          <div class="weapon-image-bg"></div>
+          <img src="/lovable-uploads/d62e0180-baab-4ebe-83ea-179d9ac656e6.png" alt="Wrench weapon" class="weapon-image">
+        </div>
+        
+        <div class="weapon-name">WEAPON WRENCH LV1</div>
+        
+        <div class="info-section">
+          <div class="info-header">
+            <div class="info-dot"></div>
+            <p>INFORMATION</p>
+          </div>
+          <div class="info-content">
+            This is a wrench for both delicate and strong damage. It is a weapon with strong damage and beautiful skin effects.
+          </div>
+        </div>
+        
+        <div class="stats">
+          <div class="stat-item">
+            <div class="stat-icon active defense-icon">
+              <div class="shield-icon"></div>
+            </div>
+            <p class="stat-percentage">100.0%</p>
+            <p class="stat-label">Defense</p>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-icon inactive">
+              <div class="skull-icon"></div>
+            </div>
+            <p class="stat-percentage">50.0%</p>
+            <p class="stat-label">Damage</p>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-icon inactive">
+              <div class="sword-icon"></div>
+            </div>
+            <p class="stat-percentage">20.0%</p>
+            <p class="stat-label">Attack</p>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-icon inactive">
+              <div class="target-icon"></div>
+            </div>
+            <p class="stat-percentage">0.0%</p>
+            <p class="stat-label">Accuracy</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="skins-list">
+        <div class="search-bar">
+          <input type="text" placeholder="Search weapon skins" class="search-input">
+          <div class="search-icon"></div>
+        </div>
+        
+        <div class="skin-item" data-skin="POOLCUEX (Default)">
+          <div class="skin-item-icon default-icon"></div>
+          <div class="skin-item-details">
+            <p class="skin-item-name">POOLCUEX (Default)</p>
+            <div class="skin-item-status">
+              <span class="status-dot default"></span>
+              <p class="status-text default">Default skin</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skin-item active" data-skin="WEAPON WRENCH LV1">
+          <div class="skin-item-icon wrench-icon"></div>
+          <div class="skin-item-details">
+            <p class="skin-item-name">WEAPON WRENCH LV1</p>
+            <div class="skin-item-status">
+              <span class="status-dot equipped"></span>
+              <p class="status-text equipped">Equipped</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skin-item" data-skin="WEAPON WRENCH V2">
+          <div class="skin-item-icon wrench-icon blue"></div>
+          <div class="skin-item-details">
+            <p class="skin-item-name">WEAPON WRENCH V2</p>
+            <div class="skin-item-status">
+              <span class="status-dot ready"></span>
+              <p class="status-text ready">Ready to use</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skin-item" data-skin="WEAPON WRENCH V3">
+          <div class="skin-item-icon wrench-icon red"></div>
+          <div class="skin-item-details">
+            <p class="skin-item-name">WEAPON WRENCH V3</p>
+            <div class="skin-item-status">
+              <span class="status-dot unavailable"></span>
+              <p class="status-text unavailable">Not available</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="empty-slot">Empty</div>
+        <div class="empty-slot">Empty</div>
+        <div class="empty-slot">Empty</div>
+        <div class="empty-slot">Empty</div>
+        <div class="empty-slot">Empty</div>
+        <div class="empty-slot">Empty</div>
+        <div class="empty-slot">Empty</div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <div class="footer-left">Action button for changing weapons</div>
+      
+      <div class="effects-toggle">
+        <p>Try effects</p>
+        <div class="toggle-track active">
+          <div class="toggle-thumb"></div>
+        </div>
+      </div>
+      
+      <button class="confirm-button">
+        <span>Confirm</span>
+        <div class="confirm-button-icon">
+          <div class="check-icon"></div>
+        </div>
+      </button>
+    </div>
+  </div>
 
-    <meta property="og:title" content="Lovable Generated Project" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
-
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
